@@ -6,15 +6,17 @@ A self-contained demo build of a Computerised Maintenance Management System (CMM
 
 ## What the system does
 
-- **Maintenance requests:** plant operators raise requests. The manager reviews them and turns them into work orders.
-- **Work orders:** the manager assigns jobs. Technicians start the job, tick the checklist, log hours and close it.
-- **Preventive maintenance (PM):** PM jobs are generated from schedules in the background.
-- **Assets and locations:** an equipment register with downtime tracking.
-- **Spare parts and purchase requests:** stock levels, storekeeper and procurement roles.
-- **Roles and permissions:** the administrator sets what each role can do.
-- **Reports and dashboard:** for the maintenance manager.
+- **Maintenance requests:** plant operators raise requests. The manager reviews them and turns them into work orders. Duplicate requests can be marked and linked.
+- **Work orders:** the manager assigns jobs. Technicians start the job, tick the checklist, log hours and close it. Closing a job needs its own permission. Each job records repair time and total cost, with a printable view.
+- **Preventive maintenance (PM):** PM jobs are generated from time and meter-based schedules in the background, with a forecast view and tracking of missed PMs.
+- **Assets, locations and meters:** an equipment register with meter readings (and corrections) and downtime tracking.
+- **Spare parts and purchase requests:** stock levels, transactions, issue slips, storekeeper and procurement roles.
+- **Reliability KPIs:** dashboard tiles and charts, including MTBF (mean time between failures) and MTTR (mean time to repair), and a monthly reliability report.
+- **Excel import:** bulk upload of assets, parts and other set-up data from templates, with a preview before saving.
+- **Email notifications:** alerts and a daily digest by SMTP or Microsoft Graph.
+- **Roles and permissions:** the administrator sets what each role can do. New users must change their password at first sign-in.
 
-Stack: ASP.NET Core (.NET), Entity Framework Core, SQLite (sample) or SQL Server, Bootstrap.
+Stack: ASP.NET Core MVC (.NET 10, Razor views), Entity Framework Core with migrations, SQLite (sample) or SQL Server, ClosedXML, MailKit, Bootstrap.
 
 ## How to run
 
