@@ -1,0 +1,41 @@
+SSES CMMS - SAMPLE FOR TESTING
+==============================
+
+This is a test copy of the SSES maintenance management system (CMMS).
+It runs only on this computer, with made-up demo data. Nothing you do here
+affects the real system, and you can't break anything.
+
+HOW TO START
+1. Unzip the whole folder somewhere, e.g. your Desktop (don't run it from inside the zip).
+2. Double-click "Start SSES CMMS sample.cmd".
+   If Windows shows "Windows protected your PC", click "More info" then "Run anyway".
+3. Your browser opens http://localhost:5090. If it doesn't, open that address yourself.
+4. Keep the black window open while testing. Close it to stop.
+
+SIGN IN
+Try different people to see what each role can do:
+
+  Username   Name                 Role
+  ---------  -------------------  ----------------------
+  admin      System Administrator Administrator (asked to choose a new password at first sign-in)
+  ED-1001    Khalid Al-Harbi      Maintenance Manager
+  ED-1002    Omar Siddiqui        Supervisor (mechanical)
+  ED-2001    Ahmed Hassan         Technician (mechanical)
+  ED-2003    Faisal Al-Qahtani    Technician (electrical)
+  ED-3001    Tariq Mahmoud        Storekeeper
+  ED-4001    Sara Al-Otaibi       Requester (plant operator)
+  ED-5001    Hana Saleh           Procurement Supervisor (no permissions until the admin sets them)
+
+  Password for admin (first sign-in only): aDiXSCKpoT72
+  Password for all ED-... users:            YriRMZi3o315
+
+THINGS TO TRY
+- As a requester (ED-4001): raise a new maintenance request.
+- As the manager (ED-1001): assign it to a technician; look at the dashboard and reports.
+- As the technician (ED-2001): open "My work", start the job, tick the checklist, log hours, complete it.
+- As the admin: Administration > Roles & permissions, to change what each role can do.
+
+START AGAIN WITH FRESH DATA
+Close the black window, delete the folder app\App_Data, then start again.
+
+Please send your comments and any problems (with screenshots if possible) to the person who gave you this sample.
